@@ -18,7 +18,7 @@ class StepFactory extends Factory
     public function definition(): array
     {
         return [
-            ''
+            'idea_id' => \App\Models\Idea::factory(),
             'description' => $this->faker->paragraph(),
             'completed' => $this->faker->boolean(),
         ];
